@@ -39,7 +39,7 @@ const InformacionProyecto = () => {
     };
   }, []);
 
-  return Number(proyectId) < 4 ? (
+  return Number(proyectId) <= ListaProyectos.length ? (
     <>
       <main>
         <section className="position-relative vh-lg-100">
