@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../components/Footer";
 
 import Navbar from "../components/Header";
 import Presentation from "../components/Presentation";
@@ -16,11 +17,12 @@ export default function Home() {
       </Head>
       <Navbar />
       <main className="container">
-          <Presentation />
-          <ProyectoDestacado />
-          <SegundoProyecto />
-          <TercerProyecto />
+        <Presentation />
+        <ProyectoDestacado />
+        <SegundoProyecto />
+        <TercerProyecto />
       </main>
+      <Footer />
     </>
   );
 }
