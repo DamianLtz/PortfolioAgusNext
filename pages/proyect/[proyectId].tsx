@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import Container from "react-bootstrap/Container";
 
 import ListaProyectos from "../api/ListaProyectos";
 import Tag from "../../components/Tag";
@@ -99,7 +100,7 @@ const InformacionProyecto = () => {
         </div>
       </section>
       <section className="bg-presentation-proyect">
-        <div className="container-fluid p-0">
+        <Container>
           {selectedProyect?.imagesProyect.map((image, index) => {
             return (
               <Image
@@ -107,10 +108,11 @@ const InformacionProyecto = () => {
                 src={image}
                 alt="Images of the proyect"
                 className="img-fluid w-100"
+                placeholder="blur"
               />
             );
           })}
-        </div>
+        </Container>
       </section>
     </main>
   );
