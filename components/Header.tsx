@@ -36,8 +36,7 @@ const Header = () => {
               <Nav className="me-auto mb-2 mb-lg-0 justify-content-evenly align-items-center h-100">
                 <Link
                   href="/aboutMe"
-                  className="text-light aboutme me-lg-2 me-0 nav-link"
-                  scroll={false}>
+                  className="text-light aboutme me-lg-2 me-0 nav-link">
                   About me
                 </Link>
                 <Link
@@ -51,8 +50,7 @@ const Header = () => {
                 </Link>
                 <Link
                   href="/unknownComponent"
-                  className="text-light aboutme ms-lg-2 ms-0 nav-link"
-                  scroll={false}>
+                  className="text-light aboutme ms-lg-2 ms-0 nav-link">
                   More
                 </Link>
               </Nav>
