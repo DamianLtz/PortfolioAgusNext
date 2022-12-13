@@ -1,0 +1,64 @@
+$font-proyect: "DM Sans", sans-serif;
+
+// Colores:
+
+$color-negro: #151517;
+$color-blanco: #ffffff;
+$color-primario: #6032bd;
+$color-primario-dark: #5628b3;
+$color-secundario-dark: #8243FF;
+$color-gris-oscuro: #2b2b29;
+$color-border-negro: #21211F;
+
+// Cambios:
+
+html,body{
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+label,
+p,
+input,
+button {
+  font-family: $font-proyect;
+  margin: 0;
+  color: $color-blanco;
+}
+
+button{
+  outline: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: $color-blanco;
+}
+
+li {
+  list-style: none;
+}
+
+ul,
+ol,
+dl {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: $color-negro;
+}
+
+.vh-100-mobile {
+  @media (max-width: 991px) {
+    height: 100vh;
+  }
+}

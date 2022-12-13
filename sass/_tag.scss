@@ -1,0 +1,19 @@
+.tag {
+  background-color: $color-gris-oscuro;
+  padding: 0.5rem;
+  font-size: 14px;
+  color: $color-blanco;
+  margin: 2.5rem 1rem 2.5rem 0;
+  border: none;
+  border-radius: 40px;
+  font-weight: 400;
+  cursor: default;
+}
+
+.tags-adjust {
+  @media (max-width: 991px) {
+    width: 100%;
+    justify-content: center;
+    margin-left: 1.25rem;
+  }
+}

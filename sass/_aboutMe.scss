@@ -1,0 +1,89 @@
+.container-flecha-back {
+  top: 32px;
+  left: 96px;
+  z-index: 1024;
+  @media (max-width: 991px) {
+    left: 32px;
+  }
+  .button-flecha {
+    display: flex;
+    align-items: center;
+    color: $color-negro;
+    background-color: #ffffff;
+    padding: 0.75rem;
+    border-radius: 50%;
+    width: 50px;
+    transition: opacity 0.3s ease,background-color 0.35s ease, color 0.35s ease;
+    &:hover {
+      background-color: $color-primario;
+      color: $color-blanco;
+      opacity: 0;
+      /* Inhabilita el efecto en pantallas moviles. */
+      @media (max-width: 576px) {
+        opacity: 1;
+      }
+    }
+  }
+
+  .button-flecha-dark {
+    background-color: $color-primario;
+    transition: background-color 0.35s ease, color 0.35s ease;
+    svg {
+      color: $color-blanco;
+    }
+  }
+
+  .button-flecha-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $color-primario;
+    color: $color-blanco;
+    padding: 0.75rem 1.5rem;
+    width: 200px;
+    border-radius: 40px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.img-aboutMe {
+  object-fit: cover;
+}
+
+.aboutMe {
+  filter: drop-shadow(0px 8px 8px rgba(21, 23, 22, 0.45));
+  @media (min-width: 991px) {
+    font-size: 4.5rem;
+  }
+}
+
+.aboutMe ~ p {
+  color: #bfbfbf;
+  bottom: 2%;
+  right: 32px;
+}
+
+.container-aboutMe {
+  padding-top: 128px;
+}
+
+.aboutme-titulo {
+  padding-top: 1rem;
+  font-size: 72px;
+}
+
+.aboutMe-info {
+  p {
+    padding: 1.5rem 0;
+  }
+}
+
+.vh-lg-100 {
+  @media (min-width: 991px) {
+    height: 100vh;
+  }
+}

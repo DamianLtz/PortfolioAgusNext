@@ -1,0 +1,68 @@
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.bg-portfolio {
+  background-color: $color-negro;
+}
+
+.navbar-portfolio {
+  padding: 1.5rem 2rem;
+  @media (max-width: 991px) {
+    padding: 0.75rem;
+  }
+}
+
+.navbar-name {
+  p:first-child {
+    font-size: 1.15rem;
+  }
+  p:nth-child(2) {
+    font-size: 0.9rem;
+    span {
+      color: $color-primario;
+    }
+  }
+}
+
+.navbar-toggler-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.nav-link {
+  @media (max-width: 991px) {
+    font-size: 2rem;
+  }
+}
+.aboutme {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+    height: 6px;
+    width: 40px;
+    opacity: 0;
+    background: $color-primario;
+    border-radius: 4px;
+    transition: all 0.25s linear;
+  }
+  &:hover {
+    color: $color-blanco;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+
+.contact-me {
+  border-radius: 40px;
+  &:hover {
+    background-color: $color-primario;
+  }
+}

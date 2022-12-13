@@ -1,0 +1,122 @@
+.footer {
+  height: auto;
+  padding-top: 3rem;
+  @media (min-width: 991px) {
+    height: 100vh;
+    padding-top: 10rem;
+  }
+}
+
+.title-footer {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  @media (min-width: 991px) {
+    font-size: 4.5rem;
+  }
+}
+
+.button-email {
+  width: 340px;
+  background-color: $color-primario;
+  padding: 1rem 1.5rem;
+  font-size: 1.25rem;
+  @media (min-width: 991px) {
+    font-size: 1.5rem;
+    width: 388px;
+  }
+  .button-hover {
+    background-color: $color-primario-dark;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.25s ease-in;
+    &:hover {
+      opacity: 1;
+    }
+    p {
+      color: $color-blanco;
+    }
+  }
+}
+
+.button-clicked {
+  width: 340px;
+  padding: 1rem 1.5rem;
+  font-size: 1.25rem;
+  background-color: $color-blanco;
+  color: $color-negro;
+  transition: all 0.4s ease;
+  @media (min-width: 991px) {
+    font-size: 1.5rem;
+    width: 388px;
+  }
+  p {
+    color: $color-negro;
+  }
+}
+
+.redes {
+  flex-wrap: wrap;
+  @media screen and (min-width: 991px) {
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+  }
+  li {
+    a {
+      padding: 0 1rem;
+      font-size: 1rem;
+      margin: 0.5rem 0;
+      &::after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -12px;
+        content: "";
+        display: block;
+        margin: 0 auto;
+        height: 6px;
+        width: 40px;
+        opacity: 0;
+        background: $color-primario;
+        border-radius: 4px;
+        transition: all 0.25s linear;
+      }
+      &:hover {
+        color: $color-blanco;
+      }
+      &:hover::after {
+        opacity: 1;
+      }
+      @media (min-width: 991px) {
+        padding: 0 1.5rem;
+        font-size: 1.25rem;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.developed {
+  position: relative;
+  &::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -12px;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    height: 6px;
+    width: 40px;
+    opacity: 0;
+    background: $color-primario;
+    border-radius: 4px;
+    transition: all 0.25s linear;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,19 @@
+.height-container {
+  height: auto;
+  h1 {
+    padding: 3.75rem 0;
+    margin-top: 4rem;
+    @media screen and (min-width: 991px) {
+      margin-top: 0;
+    }
+  }
+  @media screen and (min-width: 991px) {
+    height: 100vh;
+  }
+}
+
+.text-view {
+  font-size: 1.125rem;
+  color: $color-secundario-dark;
+  line-height: 1.5rem;
+}
