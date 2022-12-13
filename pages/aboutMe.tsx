@@ -9,6 +9,7 @@ import BgAboutMe from "../img/AboutMe/BlancoyNegro.png";
 import ButtonBack from "../components/ButtonBack";
 import ButtonLink from "../components/ButtonLinkExterno";
 import Flecha from "../img/main/Flecha.svg";
+import Footer from "../components/Footer";
 
 const AboutMe = () => {
   return (
@@ -72,6 +73,7 @@ const AboutMe = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 };
