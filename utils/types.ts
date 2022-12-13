@@ -32,4 +32,5 @@ export type TCardsViews = {
   title: string;
   description: string;
   viewOn: string;
+  link: string;
 };

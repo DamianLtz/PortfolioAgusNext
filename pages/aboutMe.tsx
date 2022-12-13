@@ -1,17 +1,23 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import Head from "next/head";
 
+// Background-image:
 import BgAboutMe from "../img/AboutMe/BlancoyNegro.png";
 // Botones:
 import ButtonBack from "../components/ButtonBack";
 import ButtonLink from "../components/ButtonLinkExterno";
 import Flecha from "../img/main/Flecha.svg";
-import Image from "next/image";
-import Footer from "../components/Footer";
 
 const AboutMe = () => {
   return (
     <>
+      <Head>
+        <title>Agustin Ietta | About me </title>
+        <meta name="description" content="My Portfolio" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <main>
         <div className="position-relative vh-lg-100 bg-about-me">
           <Image

@@ -51,7 +51,7 @@ const Header = () => {
                 </Link>
                 <Link
                   href="/unknownComponent"
-                  className="text-light aboutme me-lg-2 me-0 nav-link"
+                  className="text-light aboutme ms-lg-2 ms-0 nav-link"
                   scroll={false}>
                   More
                 </Link>
