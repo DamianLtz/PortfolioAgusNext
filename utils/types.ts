@@ -18,14 +18,10 @@ export type TTag = {
 
 export type TButton = {
   className?: string;
-  content: string;
+  content?: string;
   id?: string;
   link?: string;
-  children: JSX.Element;
-};
-
-export type TClassName = {
-  className?: string;
+  children?: JSX.Element;
 };
 
 export type TCardsViews = {

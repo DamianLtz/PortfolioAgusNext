@@ -1,9 +1,10 @@
 import React from "react";
-import { TClassName } from "../utils/types";
+import Link from "next/link";
+import { TButton } from "../utils/types";
 
-const ButtonBack = ({ className }: TClassName) => {
+const ButtonBack = ({ className, link }: TButton) => {
   return (
-    <div className="position-fixed container-flecha-back">
+    <Link href={`${link}`} className="position-fixed container-flecha-back">
       <button className={`button-flecha border-0 ${className}`}>
         <svg
           width="24"
@@ -47,7 +48,7 @@ const ButtonBack = ({ className }: TClassName) => {
         </svg>
         <p className="ms-2">Back To Home</p>
       </button>
-    </div>
+    </Link>
   );
 };
 
