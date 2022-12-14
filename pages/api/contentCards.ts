@@ -11,6 +11,6 @@ export const contentCards = [
     description:
       "You can view the general visual design, final high fidelity components, and a bit of construction.",
     viewOn: "Let’s view pixel perfect things",
-    link: "/"
+    link: "/proyect/1"
   },
 ];

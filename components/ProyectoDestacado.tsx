@@ -38,7 +38,7 @@ const Proyectos = () => {
           })}
         </div>
         <Button
-          link="/proyect/1"
+          link="/unknownComponent"
           className="button-view-proyect button-animate"
           content="View proyect"
           id="goToUno">
