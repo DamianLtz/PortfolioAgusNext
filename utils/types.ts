@@ -5,11 +5,18 @@ export interface IProyectos {
   id: number;
   tags: Array<string>;
   image: StaticImageData;
+  alt: string;
+  overviewHome: string;
   overview: string;
   role: string;
   year: string;
   imagesProyect: Array<StaticImageData>;
 }
+
+export type TProyect = {
+  proyectName: "Apolo" | "Quiero!" | "MercadoPOS";
+  order?: "reverse";
+};
 
 export type TTag = {
   content: string;

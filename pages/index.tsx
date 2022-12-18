@@ -3,9 +3,8 @@ import Footer from "../components/Footer";
 
 import Navbar from "../components/Header";
 import Presentation from "../components/Presentation";
-import ProyectoDestacado from "../components/ProyectoDestacado";
-import SegundoProyecto from "../components/SegundoProyecto";
-import TercerProyecto from "../components/TercerProyecto";
+import PrimaryProyect from "../components/PrimaryProyect";
+import SecondaryProyect from "../components/SecondaryProyects";
 
 export default function Home() {
   return (
@@ -18,9 +17,9 @@ export default function Home() {
       <Navbar />
       <main className="container">
         <Presentation />
-        <ProyectoDestacado />
-        <SegundoProyecto />
-        <TercerProyecto />
+        <PrimaryProyect proyectName="Apolo" />
+        <SecondaryProyect proyectName="Quiero!" />
+        <SecondaryProyect proyectName="MercadoPOS" order="reverse" />
       </main>
       <Footer />
     </>

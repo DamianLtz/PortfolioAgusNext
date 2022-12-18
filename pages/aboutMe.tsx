@@ -26,7 +26,6 @@ const AboutMe = () => {
             alt=""
             className="img-fluid w-100 img-aboutMe"
             priority={true}
-            // placeholder={"blur"}
           />
           <Link href={"/"}>
             <ButtonBack link="/"/>

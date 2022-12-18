@@ -48,11 +48,6 @@ const Header = () => {
                     <Image src={ContactMeLogo} alt="" priority={true} />
                   </span>
                 </Link>
-                <Link
-                  href="/unknownComponent"
-                  className="text-light aboutme ms-lg-2 ms-0 nav-link">
-                  More
-                </Link>
               </Nav>
             </div>
           </Navbar.Collapse>

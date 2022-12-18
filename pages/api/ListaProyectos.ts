@@ -1,7 +1,7 @@
 import { IProyectos } from "../../utils/types";
 
-//------------------------ Pampa ------------------------//
-import PampaImg from "../../img/main/proyectoUno.png";
+//------------------------ Belo ------------------------//
+import BeloImg from "../../img/proyectsInfo/belo/Mock_apolo_1.png";
 import PampaImgProyect1 from "../../img/proyectsInfo/pampa/img1.png";
 import PampaImgProyect2 from "../../img/proyectsInfo/pampa/img2.png";
 import PampaImgProyect3 from "../../img/proyectsInfo/pampa/img3.png";
@@ -11,7 +11,7 @@ import PampaImgProyect6 from "../../img/proyectsInfo/pampa/img6.png";
 
 //------------------------ Banco Galicia: Quiero! ------------------------//
 
-import QuieroImg from "../../img/main/proyectoDos.png";
+import QuieroImg from "../../img/proyectsInfo/quiero/proyectoDos.png";
 import QuieroImg1 from "../../img/proyectsInfo/quiero/1.png";
 import QuieroImg2 from "../../img/proyectsInfo/quiero/2.png";
 import QuieroImg3 from "../../img/proyectsInfo/quiero/3.png";
@@ -36,15 +36,18 @@ import QuieroImg22 from "../../img/proyectsInfo/quiero/22.png";
 
 //------------------------ Mercado POS ------------------------//
 
-import MPosImg1 from "../../img/main/proyectoCuatro.png";
+import MPosImg1 from "../../img/proyectsInfo/mercadoPos/proyectoCuatro.png";
 import MPosImg2 from "../../img/proyectsInfo/mercadoPos/img1.jpg";
 
 const ListaProyectos: Array<IProyectos> = [
   {
-    title: "Pampa",
+    title: "Apolo",
     id: 1,
     tags: ["Design system", "Visual Design"],
-    image: PampaImg,
+    image: BeloImg,
+    alt: "image proyect Belo",
+    overviewHome:
+      "A design system for a mobile crypto product. \r\n From design principles and color to components.",
     overview:
       "I made from the very beginning this Design System for the principle product in the company, here's a bit of the system to show you.",
     role: "Visual Designer",
@@ -63,6 +66,9 @@ const ListaProyectos: Array<IProyectos> = [
     id: 2,
     tags: ["Research", "Lean UX", "Usability Test"],
     image: QuieroImg,
+    alt: "image proyect Quiero!",
+    overviewHome:
+      "A case study where me and my team improved the expiration of points in the benefits product, Quiero!",
     overview:
       "This one is a short experiment, based on Lean UX methodology. This experiment is for understanding how to improve points expiration on the benefits program, Quiero!",
     role: "Product Designer",
@@ -96,6 +102,9 @@ const ListaProyectos: Array<IProyectos> = [
     id: 3,
     tags: ["Design Thinking", "Lean UX"],
     image: MPosImg1,
+    alt: "image proyect MercadoPOS",
+    overviewHome:
+      "This is a personal challengue to design MercadoPos function at Mercadopago and make a short experiment to validate an a hiphotesys",
     overview:
       "This is a personal challengue to design MercadoPos function at Mercadopago and make a promotional landing for it.",
     role: "Product Designer",

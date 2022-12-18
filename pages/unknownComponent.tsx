@@ -17,7 +17,7 @@ const UnknownComponent = () => {
       </Head>
       <main>
         <Link href={"/"}>
-          <ButtonBack />
+          <ButtonBack link="/"/>
         </Link>
         <section className="container">
           <div className="d-flex flex-column justify-content-center height-container">

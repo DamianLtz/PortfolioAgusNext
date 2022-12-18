@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Container from "react-bootstrap/Container";
-
 import Tag from "../../components/Tag";
 import Footer from "../../components/Footer";
 import ListaProyectos from "../api/ListaProyectos";
