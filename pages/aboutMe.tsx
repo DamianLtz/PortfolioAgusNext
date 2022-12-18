@@ -25,6 +25,7 @@ const AboutMe = () => {
             src={BgAboutMe}
             alt=""
             className="img-fluid w-100 img-aboutMe"
+            priority={true}
           />
           <Link href={"/"}>
             <ButtonBack link="/"/>
