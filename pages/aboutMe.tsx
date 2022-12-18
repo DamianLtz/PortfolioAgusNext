@@ -27,7 +27,7 @@ const AboutMe = () => {
             className="img-fluid w-100 img-aboutMe"
           />
           <Link href={"/"}>
-            <ButtonBack />
+            <ButtonBack link="/"/>
           </Link>
           <h1 className="position-absolute top-50 start-50 translate-middle aboutMe fw-bold">
             About Me
