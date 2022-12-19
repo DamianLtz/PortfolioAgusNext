@@ -16,9 +16,7 @@ const UnknownComponent = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Link href={"/"}>
-          <ButtonBack link="/"/>
-        </Link>
+        <ButtonBack />
         <section className="container">
           <div className="d-flex flex-column justify-content-center height-container">
             <h1 className="text-center fw-bold">

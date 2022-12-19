@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import { TButton } from "../utils/types";
 
@@ -31,10 +30,7 @@ const ButtonBack = ({ className }: TButton) => {
           />
         </svg>
       </button>
-      <button
-        className={`d-none d-sm-flex align-items-center justify-content-center button-flecha-hover border-0 ${
-          pathname === "/aboutMe" ? "button-width" : ""
-        }`}>
+      <button className="d-none d-sm-flex align-items-center justify-content-center button-flecha-hover border-0">
         <svg
           width="24"
           height="24"
@@ -54,9 +50,7 @@ const ButtonBack = ({ className }: TButton) => {
             fill="CurrentColor"
           />
         </svg>
-        <p className="ms-2">
-          {pathname === "/aboutMe" ? "Back to home" : "Back"}
-        </p>
+        <p className="ms-2">Back</p>
       </button>
     </div>
   );

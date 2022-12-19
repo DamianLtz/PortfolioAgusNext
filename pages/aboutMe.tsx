@@ -1,8 +1,7 @@
-import React from "react";
-import Link from "next/link";
+import React, { useRef } from "react";
 import Image from "next/image";
 import Head from "next/head";
-
+import { useInView } from "framer-motion";
 // Background-image:
 import BgAboutMe from "../img/AboutMe/BlancoyNegro.png";
 // Botones:
@@ -12,6 +11,8 @@ import Flecha from "../img/main/Flecha.svg";
 import Footer from "../components/Footer";
 
 const AboutMe = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
     <>
       <Head>
@@ -20,16 +21,19 @@ const AboutMe = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="position-relative vh-lg-100 bg-about-me">
+        <div className="position-relative vh-lg-100">
           <Image
             src={BgAboutMe}
             alt=""
             className="img-fluid w-100 img-aboutMe"
             priority={true}
+            ref={ref}
+            style={{
+              opacity: isInView ? 1 : 0,
+              transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.25s",
+            }}
           />
-          <Link href={"/"}>
-            <ButtonBack link="/"/>
-          </Link>
+          <ButtonBack />
           <h1 className="position-absolute top-50 start-50 translate-middle aboutMe fw-bold">
             About Me
           </h1>
