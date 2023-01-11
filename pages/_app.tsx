@@ -1,7 +1,8 @@
-import { motion, AnimatePresence } from "framer-motion";
+import type { AppProps } from "next/app";
 import "../styles/styles.scss";
 import { useRouter } from "next/router";
-import type { AppProps } from "next/app";
+import { motion, AnimatePresence } from "framer-motion";
+import { DefaultSeo } from "next-seo";
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -13,6 +14,21 @@ export default function App({ Component, pageProps }: AppProps) {
   };
   return (
     <>
+      <DefaultSeo
+        title="Agustin Ietta Portfolio's"
+        description="My portfolio web"
+        openGraph={{
+          type: "website",
+          locale: "en_IE",
+          url: "https://portfolio-agus.vercel.app/",
+        }}
+        twitter={{
+          handle: "@handle",
+          site: "@site",
+          cardType: "summary_large_image",
+        }}
+        canonical="https://portfolio-agus.vercel.app/"
+      />
       <AnimatePresence
         mode="wait"
         initial={false}

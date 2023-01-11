@@ -4,7 +4,6 @@ import { TButton } from "../utils/types";
 
 const ButtonBack = ({ className }: TButton) => {
   const router = useRouter();
-  const pathname = router.pathname;
   return (
     <div
       className="position-fixed container-flecha-back"

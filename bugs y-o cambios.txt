@@ -1,1 +1,3 @@
-- Background de About-me carga más lento que el componente.
+Falta el link de Medium.
+Faltan Img's de Belo.
+Usar el mismo link del portfolio viejo, la concha de mi hermana.
